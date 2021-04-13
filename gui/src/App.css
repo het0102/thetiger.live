@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
+ /*font-family: "Times New Roman", Times, serif;*/
+ /*font-family: "Trirong", sans-serif;
+ font-family: Times, Times New Roman, Georgia, serif;*/ 
+
+
+/*user-selection none--CSS*/
+
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+
+.nav{
+  text-decoration: none;
+  color: rgba(0,0,0,.55);
+  display: flex;
+  align-items: center;
+  margin: 8px
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  max-width: 1300px;
+}
+
+.row{
+  max-width: 85rem;
+  margin: auto;
+}
+
+p{
+  color: grey;
+}
+
+.dropdown:hover>.dropdown-menu{
+  display: block;
+}
+
+
+/*Home-Css*/
+
+.home{
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.content_container{
+  margin-bottom: 1rem;
+}
+
+.column{
+  padding-right: .3125rem;
+  padding-left: .3125rem;
+}
+
+.text-title{
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: .9rem;
+  text-align: center;
+}
+
+
+
+.column-block{
+  margin-bottom: .625rem;
+}
+
+.small-3{
+  width: auto;
+  display: contents; 
+}
+
+.small-9{
+  width: 75%;
+}
+
+
+
+/*Login-css & Signup-css*/
+
+.login {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 230px;
+  }
+
+.login__container {
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+
+.login__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+  }
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__signInButton {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+  }
+
+  .login__registerButton {
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: darkgray;
+  }
+ 
+
+
+  
+/*All Hover Effects*/
+  
+.products:hover{
+  color: rgb(221, 99, 34) !important;
+}  
+
+.nav-links:hover{
+  color:rgb(221, 99, 34) !important;
+}
+
+.footer-links:hover{
+ color: rgb(221, 99, 34); 
+ /*color: #42210b;*/
+}
+
+
+
+
+/*Footer-css*/
+
+footer{
+  background-color: #42210b;
+  /*background-color: rgb(221, 99, 34);*/
+}
+
+.footer-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo{
+  height: auto !important;
+  width: 100%;
+  max-width: 215px;
+  max-height: 105px;
+}
+
+.footer-content{
+  border: 2px solid white ;
+  border-radius: 20px;
+  width: 450px;
+}
+
+.footer-content-inner{
+  background-color: white;
+  border-radius: 20px ;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links{
+  line-height: 1.9;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social{
+  text-decoration: none;
+}
+
+.footer-logo-social{
+  height: 45px;
+  width: 55px;
+  margin-top: 9px;
+  margin: auto;
+  padding-right: 5px; 
+  padding-left: 5px
+}
+
+/*.footer-three{
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}*/
+
+.footer-leg-icon{
+  height: 17px;
+  width: 17px;
+  margin-right: 5px;
+}
+
+.image-content{
+  height: auto !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+  .image-product{
+    width: 300px !important;
+    height: auto !important;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .image-product{
+    width: 400px !important;
+    height: auto !important;
+  }
+  
+}
+
+@media screen and (max-width: 992px) {
+  .image-product{
+    width: 400px !important;
+    height: auto !important;
+  }
+  
+}
