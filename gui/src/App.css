@@ -115,7 +115,7 @@ p{
   }
 
 .login__container {
-    width: 400px;
+    /*width: 400px;*/
     height: fit-content;
     display: flex;
     flex-direction: column;
