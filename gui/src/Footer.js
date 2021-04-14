@@ -38,9 +38,9 @@ function Footer() {
 
             </div>*/}
 
-            <div class="col-md-4 col-xsm-12 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="col-md-4 col-xsm-12 col-sm-12">
 
-                <ul class="list-unstyled mr-auto" style={{margin:"auto",marginLeft:"200px"}}>
+                <ul class="list-unstyled ml-auto d-grid justify-content-center align-items-center m-auto ml-auto">
                   <li>
                     <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/about" class="footer-links">About</Link> 
                   </li>

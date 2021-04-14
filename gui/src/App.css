@@ -260,6 +260,10 @@ footer{
   justify-content: center;
 }
 
+.list-unstyled {
+  padding-left: 65px !important;
+}
+
 
 
 
