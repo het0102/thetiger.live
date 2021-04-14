@@ -12,7 +12,6 @@ const productContent = {
 
 const imgContent = {
     height: "auto",
-    maxWidth: "550px",
     width:"100%",
 };
 

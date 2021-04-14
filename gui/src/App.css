@@ -263,30 +263,3 @@ footer{
 .list-unstyled {
   padding-left: 65px !important;
 }
-
-
-
-
-@media screen and (max-width: 576px) {
-  .image-product{
-    width: 300px !important;
-    height: auto !important;
-  }
-  
-}
-
-@media screen and (max-width: 768px) {
-  .image-product{
-    width: 400px !important;
-    height: auto !important;
-  }
-  
-}
-
-@media screen and (max-width: 992px) {
-  .image-product{
-    width: 400px !important;
-    height: auto !important;
-  }
-  
-}
