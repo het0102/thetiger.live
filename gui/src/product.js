@@ -89,7 +89,7 @@ function Product(props) {
 
 
     const [trackPrice,setTrackPrice] = useState("")
-    const url = `http://127.0.0.1:8000/product/api/PriceTrackingData`
+    const url = `https://thetiger.live/product/api/PriceTrackingData`
     
     //console.log("?////////11111///", props)
     
@@ -141,7 +141,7 @@ function Product(props) {
 
 
     useEffect(()=>{
-        axios.get(`http://127.0.0.1:8000/product/api/id=${val}`)
+        axios.get(`https://thetiger.live/product/api/id=${val}`)
         .then(res=>{
             setProducts(res.data)
         })
@@ -158,7 +158,7 @@ function Product(props) {
             {/*Banner Section image and info.*/}
             <div className="row d-flex justify-content-center align-items-center py-5">
                 <div className="col-md-6" >
-                    <img src="/img/laptop.jpg" className="image-product" style={imgContent} />
+                    <img src={"/static/laptop.jpg"} className="image-product" style={imgContent} />
                 </div>
                 <div className="col-md-6" style={productContent}>
                     <p>{product.title}</p>

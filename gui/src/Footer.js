@@ -24,7 +24,7 @@ function Footer() {
 
             <div class="col-md-4 col-xsm-12 col-sm-12 my-5 justify-content-center align-items-center" >
 
-                <img src="/img/footer-09.png" class="image-content" alt="image-content" />
+                <img src={"/static/footer-09.png"} class="image-content" alt="image-content" />
 
             </div>
 
@@ -42,16 +42,16 @@ function Footer() {
 
                 <ul class="list-unstyled ml-auto d-grid justify-content-center align-items-center m-auto ml-auto">
                   <li>
-                    <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/about" class="footer-links">About</Link> 
+                    <img src={"/static/tiger icon.png"} className="footer-leg-icon" /><Link to="/about" class="footer-links">About</Link> 
                   </li>
                   <li>
-                    <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/features" class="footer-links">Features</Link>
+                    <img src={"/static/tiger icon.png"} className="footer-leg-icon" /><Link to="/features" class="footer-links">Features</Link>
                   </li>
                   <li>
-                    <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/blog" class="footer-links">Blog</Link>
+                    <img src={"/static/tiger icon.png"} className="footer-leg-icon" /><Link to="/blog" class="footer-links">Blog</Link>
                   </li>
                   <li>
-                    <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/terms" class="footer-links">Terms & Privacy</Link>
+                    <img src={"/static/tiger icon.png"} className="footer-leg-icon" /><Link to="/terms" class="footer-links">Terms & Privacy</Link>
                   </li>
                   {/*<li>
                     <a href="/privacy" class="footer-links">Privacy</a>
@@ -61,10 +61,10 @@ function Footer() {
                     <a href="/supportus" style={{textDecoration: 'none'}}>Support US</a>
                   </li>*/}
                   <li>
-                    <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/tools" class="footer-links">Contact Us</Link>
+                    <img src={"/static/tiger icon.png"} className="footer-leg-icon" /><Link to="/tools" class="footer-links">Contact Us</Link>
                   </li>
                   <li>
-                    <img src="/img/tiger icon.png" className="footer-leg-icon" /><Link to="/help" class="footer-links">Help</Link>
+                    <img src={"/static/tiger icon.png"} className="footer-leg-icon" /><Link to="/help" class="footer-links">Help</Link>
                   </li>
               </ul>
 
@@ -72,17 +72,17 @@ function Footer() {
 
             <div class="col-md-4 col-xsm-12 col-sm-12 my-2 d-grid justify-content-center align-items-center footer-three">
 
-              <img src="/img/footer-03.png" className="footer-logo" title="TheTiger.live" alt="logo" />
+              <img src={"/static/footer-03.png"} className="footer-logo" title="TheTiger.live" alt="logo" />
               <h5 class="text-white mt-2" style={{color:"rgb(221, 99, 34)"}}>Contact Us</h5>
               <div>
 
-                <a href="https://www.facebook.com/PruthaTek" target="_blank"><img src="/img/facebook2.png" className="footer-logo-social" title="TheTiger.live" alt="fb-logo" /></a>
+                <a href="https://www.facebook.com/PruthaTek" target="_blank"><img src={"/static/facebook2.png"} className="footer-logo-social" title="TheTiger.live" alt="fb-logo" /></a>
 
-                <a href="https://www.instagram.com/pruthaTek" target="_blank"><img src="/img/insta2.png" className="footer-logo-social" title="TheTiger.live" alt="insta-logo" /></a>
+                <a href="https://www.instagram.com/pruthaTek" target="_blank"><img src={"/static/insta2.png"} className="footer-logo-social" title="TheTiger.live" alt="insta-logo" /></a>
 
-                <a href="https://www.linkedin.com/PruthaTek" target="_blank"><img src="/img/linkdin.png" className="footer-logo-social" title="TheTiger.live" alt="linkedin-logo" /></a>
+                <a href="https://www.linkedin.com/in/prutha-technomarket-pvt-ltd-a68880194/" target="_blank"><img src={"/static/linkdin.png"} className="footer-logo-social" title="TheTiger.live" alt="linkedin-logo" /></a>
 
-                <a href="https://mail.google.com/mail" target="_blank"><img src="/img/mail.png" className="footer-logo-social" title="TheTiger.live" alt="gmail-logo" /></a>
+                <a href="https://mail.google.com/mail" target="_blank"><img src={"/static/mail.png"} className="footer-logo-social" title="TheTiger.live" alt="gmail-logo" /></a>
 
             </div>
 
@@ -93,7 +93,7 @@ function Footer() {
         <div class="text-center p-3">
           <hr style={{color: "white",height: "4px"}}/>
 
-          <h5 className="copy-right" style={mystyle1}> &copy; 2021 <a href="https://pruthatek.com" target="_blank" style={{textDecoration:"none"}}><img src="/img/pruthatek.png" title="logo" alt="PruthaTek" style={{height: "25px",marginBottom:"2px"}}/>.</a> All Rights Reserved.</h5>       
+          <h5 className="copy-right" style={mystyle1}> &copy; 2021 <a href="https://pruthatek.com" target="_blank" style={{textDecoration:"none"}}><img src={"/static/pruthatek.png"} title="logo" alt="PruthaTek" style={{height: "25px",marginBottom:"2px"}}/>.</a> All Rights Reserved.</h5>       
         </div>
 
     </footer>

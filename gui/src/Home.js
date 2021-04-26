@@ -41,12 +41,19 @@ const llllarge5 = {
 
 
 function Home() {
+
+
+	useEffect (() => {
+
+		window.scrollTo(0,0)
+
+	}, [])
 	
 
 	const [products,setProducts]=useState([]);
 
     	useEffect(()=>{
-        fetch("http://127.0.0.1:8000/product/api/",{
+        fetch("https://thetiger.live/product/api/",{
             method:'GET',
             headers:{
                 'Content-Type': 'application/json'
@@ -136,7 +143,7 @@ function Home() {
 						<div class="column col-md-4">
 							<div class="row">
 								<div class="column-block small-3">
-									<img src="/img/Icon1.png" alt="image" style={{height:"80px",width:"80px"}}/>
+									<img src={"/static/Icon1.png"} alt="image" style={{height:"80px",width:"80px"}}/>
 								</div>
 								<div class="column-block small-9">
 									<h5 style={{marginBottom: ".5rem",lineHeight: "1.4",fontWeight:"500"}}>Amazon Price Drop Alerts</h5>
@@ -148,7 +155,7 @@ function Home() {
 						<div class="column col-md-4">
 							<div class="row">
 								<div class="column-block small-3">
-									<img src="/img/Icon2.png" alt="image" style={{height:"80px",width:"80px"}}/>
+									<img src={"/static/Icon2.png"} alt="image" style={{height:"80px",width:"80px"}}/>
 								</div>
 								<div class="column-block small-9">
 									<h5 style={{marginBottom: ".5rem",lineHeight: "1.4",fontWeight:"500"}}>Amazon Price History Charts</h5>
@@ -160,7 +167,7 @@ function Home() {
 						<div class="column col-md-4">
 							<div class="row">
 								<div class="column-block small-3">
-									<img src="/img/Icon3.png" alt="image" style={{height:"80px",width:"80px"}}/>
+									<img src={"/static/Icon3.png"} alt="image" style={{height:"80px",width:"80px"}}/>
 								</div>
 								<div class="column-block small-9">
 									<h5 style={{marginBottom: ".5rem",lineHeight: "1.4",fontWeight:"500"}}>Browser Extension</h5>
@@ -240,8 +247,8 @@ function Home() {
 				</div>
 			
 				<h6 style={{textAlign: "center",marginTop:"8px",fontWeight:"800"}}>Don't have account ?</h6>
-                <a 
-                	href="/signup" 
+                <Link 
+                	to="/signup" 
                 	className='login__registerButton' 
                 	style={{
                 		marginBottom: "auto",
@@ -255,7 +262,7 @@ function Home() {
                 		width: "250px",
                 		height: "50px",
                 		margin: "auto"
-                	}}>Create your Account</a>
+                	}}>Create your Account</Link>
 
                 <div class="column">
 

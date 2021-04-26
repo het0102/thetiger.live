@@ -23,7 +23,7 @@ function Header(props) {
 		let x = "Token "+props.token;
 		axios({
 			method: 'post',
-			url: "http://127.0.0.1:8000/api/logout/",
+			url: "https://thetiger.live/api/logout/",
 			headers: {'Authorization': x }
 		})		
 		.then(r=>{
@@ -49,7 +49,7 @@ return (
    
       	<Navbar bg="white" expand="lg" style={styleNav}>
 
-  			<Navbar.Brand href="/"><img src="/img/LOGO1.png" title="TheTiger.live" style={{height: "auto",maxWidth:"230px",width:"100%"}} alt="logo" /></Navbar.Brand>
+  			<Navbar.Brand href="/"><img src={"/static/LOGO1.png"} title="TheTiger.live" style={{height: "auto",maxWidth:"230px",width:"100%"}} alt="logo" /></Navbar.Brand>
   			<Navbar.Toggle aria-controls="basic-navbar-nav" style={{color: "white"}} />
 
   			<Navbar.Collapse id="basic-navbar-nav">
@@ -76,7 +76,9 @@ return (
 			          
 			          <Link to="/" style={{display: "none"}} ref={helperRef} ></Link>
 			          	{props.token ?
-			          		<span class="dropdown-item nav-links" onClick={redirectHelper} style={{cursor: "pointer"}} >Logout</span>
+							<>
+							<h5>Hello{props.name}</h5>
+			          		<span class="dropdown-item nav-links" onClick={redirectHelper} style={{cursor: "pointer"}} >Logout</span></>
 			          		:
 			          		<span>
 								<Link class="dropdown-item nav-links" to="/signup">Sign Up</Link>
