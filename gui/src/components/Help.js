@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import { Accordion,Card } from 'react-bootstrap'
@@ -30,6 +30,13 @@ const inner_frame = {
 
 
 function Help() {
+
+
+	useEffect (() => {
+
+		window.scrollTo(0,0)
+
+	}, [])
    
 
     return (

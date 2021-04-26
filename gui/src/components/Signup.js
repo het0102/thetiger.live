@@ -42,7 +42,7 @@ export default class Signup extends React.Component {
         }
         else 
         {
-            const form = await axios.post('http://127.0.0.1:8000/api/register', {
+            const form = await axios.post('https://thetiger.live/api/register', {
     
             name,
             email,
@@ -144,7 +144,7 @@ export default class Signup extends React.Component {
                     </p>
 
                 
-                   <div> Already Have Account ?<a href="/login" style={{textDecoration:"none"}}>  Log in</a></div>
+                   <div> Already Have Account ?<Link to="/login" style={{textDecoration:"none"}}>  Log in</Link></div>
             </div>
         </div>
     );

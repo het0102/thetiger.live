@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import { Accordion,Card } from 'react-bootstrap'
@@ -27,6 +27,13 @@ const inner_frame = {
 };
 
 export default function Features() {
+
+
+	useEffect (() => {
+
+		window.scrollTo(0,0)
+
+	}, [])
    
 
     return (
@@ -57,20 +64,20 @@ export default function Features() {
 							      <Card.Body>The primary feature of our site is the sending of email alerts when prices change. The user simply sets a price threshold at which alerts are generated, and we email you when that condition is met.</Card.Body>
 							    </Accordion.Collapse>
 							  </Card>
-							  <Card>
+							  {/*<Card>
 							    <Accordion.Toggle as={Card.Header} eventKey="1">
 							      Price History Charts
 							    </Accordion.Toggle>
 							    <Accordion.Collapse eventKey="1">
 							      <Card.Body>Price history charts are another major part of Thetiger.live. Every product page contains graphs of the price variations over time for each of the three price types, as well as the high/low/average prices. Price and availability data is updated from Amazon constantly to ensure it is as accurate as possible, but should always be checked on Amazon before making a purchase. </Card.Body>
 							    </Accordion.Collapse>
-							  </Card>
+							  </Card>*/}
 							  <Card>
 							    <Accordion.Toggle as={Card.Header} eventKey="2">
 							      Amazon Product Search
 							    </Accordion.Toggle>
 							    <Accordion.Collapse eventKey="2">
-							      <Card.Body>Search is accessed via the box at the top right of every page, or by clicking "Amazon Products" in the menu at the top of the page.<br/><br/>Search results are displayed tabularly and, amongst other things, contain the Amazon/New/Used prices and links to price history RSS feeds for each price type, which are useful if you'd rather not actually create a price watch.</Card.Body>
+							      <Card.Body>Search is accessed via the box at the top center of every page, or by clicking "Amazon Products" in the menu at the top of the page.<br/><br/>Search results are displayed tabularly and, amongst other things, contain the Amazon/New/Used prices and links to price history RSS feeds for each price type, which are useful if you'd rather not actually create a price watch.</Card.Body>
 							    </Accordion.Collapse>
 							  </Card>
 							  

@@ -34,7 +34,7 @@ export default class Login extends React.Component {
 
     const { email, password } = this.state;
 
-    const form = await axios.post('http://127.0.0.1:8000/api/login', {
+    const form = await axios.post('https://thetiger.live/api/login', {
 
         email,
         password
@@ -117,8 +117,8 @@ export default class Login extends React.Component {
                 </p>
                 
                 <h6>Don't have account ?</h6>
-                <a 
-                    href="/signup" 
+                <Link 
+                    to="/signup" 
                     className='login__registerButton' 
                     style={{
                             marginTop:"5px",
@@ -130,7 +130,7 @@ export default class Login extends React.Component {
                             color:'white',
                             paddingTop:'2px'
                         }}>
-                        Create your Account</a>
+                        Create your Account</Link>
             </div>
         </div>
 

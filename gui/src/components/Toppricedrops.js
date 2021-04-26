@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -19,6 +19,13 @@ const Card1 = {
 
 
 function Toppricedrops() {
+
+
+  useEffect (() => {
+
+    window.scrollTo(0,0)
+
+  }, [])
    
     var settings = {
       dots: true,

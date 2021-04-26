@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -9,7 +9,7 @@ const pagetitle = {
 	borderRadius: "3px",
 	padding: "0.5rem 1rem",
 	marginBottom: "0",
-	lineHeight:"1.2",
+	lineHeight:"1.2",	
 	fontWeight:"500"
 };
 
@@ -55,6 +55,13 @@ const medium1 = {
 
 function About() {
 
+
+	useEffect (() => {
+
+		window.scrollTo(0,0)
+
+	}, [])
+
    
     return (
 
@@ -78,7 +85,7 @@ function About() {
 
     						<div style={content}>
 
-    							<img src="/img/logo1.png" alt="image" style={{maxHeight:"300px",maxWidth:"300px"}} />
+    							<img src={"/static/LOGO1.png"} alt="image" style={{maxHeight:"300px",maxWidth:"300px"}} />
 
     						</div>
 

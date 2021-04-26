@@ -14,7 +14,7 @@ const SearchElement = (props) =>{
   //console.log("BBBBBBBBBBBBBBBBBBBBBBV")
 	
   useEffect(()=>{
-		axios('http://127.0.0.1:8000/product/api/?search='+text)
+		axios('https://thetiger.live/product/api/?search='+text)
 		.then(res=>{
       setProducts(res.data)
 			console.log(res.data)

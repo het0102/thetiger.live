@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Footer from "../Footer";
 import PopularCard from "./PopularCard";
 import Slider from "react-slick";
@@ -20,6 +20,13 @@ const Card1 = {
 
 
 function Popularproducts() {
+
+
+  useEffect (() => {
+
+    window.scrollTo(0,0)
+
+  }, [])
    
    var settings = {
       dots: true,

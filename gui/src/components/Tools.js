@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import {Link} from 'react-router-dom'
@@ -35,6 +35,13 @@ const inner_frame = {
 
 
 function Tools() {
+
+
+	useEffect (() => {
+
+		window.scrollTo(0,0)
+
+	}, [])
    
 
     return (
@@ -69,7 +76,7 @@ function Tools() {
 
 									<li style={{lineHeight:"1.4"}}><a href="https://mail.google.com/mail" target="_blank" style={{textDecoration: "none"}}>Email</a> · Email us directly at <span style={{color:"rgb(221, 99, 34)",fontWeight:"800"}}>info@pruthatek.com.</span> <Link to="/help" style={{textDecoration:"none"}}>Please read the FAQs first</Link>. We cannot respond to emails asking questions that are already answered there. Thanks for your help and consideration. </li>
 									<li style={{lineHeight:"1.4"}}><a href="https://www.instagram.com/pruthaTek" target="_blank" style={{textDecoration: "none"}}>Instagram</a> · pruthatek</li>
-									<li style={{lineHeight:"1.4"}}><a href="https://www.linkedin.com/PruthaTek" target="_blank" style={{textDecoration: "none"}}>LinkedIn</a> · PruthaTek</li>
+									<li style={{lineHeight:"1.4"}}><a href="https://www.linkedin.com/in/prutha-technomarket-pvt-ltd-a68880194/" target="_blank" style={{textDecoration: "none"}}>LinkedIn</a> · Prutha Technomarket Pvt Ltd</li>
 									<li style={{lineHeight:"1.4"}}><a href="https://www.facebook.com/PruthaTek" target="_blank" style={{textDecoration: "none"}}>Facebook</a> · PruthaTek</li>
 
 								</ul>
